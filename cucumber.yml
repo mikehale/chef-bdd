@@ -1,0 +1,2 @@
+default: features -r features -e data/*
+focus: features -r features -t focus
