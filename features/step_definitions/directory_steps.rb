@@ -17,7 +17,7 @@
 #
 
 Then /^a directory named '(.+)' should exist$/ do |dir|
-  File.directory?(File.join(tmpdir, dir)).should be(true)  
+  File.directory?(dir).should be(true)
 end
 
 Then /^a directory named '(.+)' should not exist$/ do |dir|

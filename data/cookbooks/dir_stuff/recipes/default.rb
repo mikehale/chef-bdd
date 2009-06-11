@@ -1,3 +1,3 @@
-directory "#{node[:int][:tmpdir]}/my_app"
-directory "#{node[:int][:tmpdir]}/my_app/corey"
-directory "#{node[:int][:tmpdir]}/my_app/michael"
+directory "/var/www/apps/my_app"
+directory "/var/www/apps/my_app/corey"
+directory "/var/www/apps/my_app/michael"

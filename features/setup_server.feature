@@ -9,7 +9,6 @@ I would like to have chef setup my server
 
   Scenario: Setting up the server
     When I run 'setup_server'
-    Then the run should exit '0'
     And the server should have the hostname 'example.com'
     And 'openssh' should be installed configured to 'only allow key logins'
     And the packages 'pgpgpg, mailx, htop, rsync' should be installed
