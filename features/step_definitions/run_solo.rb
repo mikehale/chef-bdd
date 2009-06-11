@@ -4,8 +4,6 @@ When /^I run chef-solo with the '(.+)' recipe$/ do |recipe_name|
   dna_file = "#{tmpdir}/chef-solo-features-dna.json"
   File.open(dna_file, "w") do |fp|
     fp.write("{ \"recipes\": [\"#{recipe_name}\"] }")
-    
-    # %({ "attributes":  "recipes": ["#{recipe_name}"] })
   end
 
   cleanup_files << "#{tmpdir}/chef-solo-features-dna.json"
