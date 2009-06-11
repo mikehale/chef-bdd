@@ -14,7 +14,7 @@ When /^I run chef-solo with the '(.+)' recipe$/ do |recipe_name|
   cleanup_dirs << cache_dir 
 
   # Cookbook dir
-  cookbook_dir ||= File.expand_path(File.join(File.dirname(__FILE__), '..', 'data', 'cookbooks'))
+  cookbook_dir ||= File.expand_path(File.join(File.dirname(__FILE__), '..', '..', 'data', 'cookbooks'))
   system("cp -r #{cookbook_dir} #{cache_dir}")
 
   # Config file

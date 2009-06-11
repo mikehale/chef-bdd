@@ -1,4 +1,4 @@
-default: features -r features -e data/*
+default: features -r features
 focus: features -r features -t focus
-autotest: features -r features -e data/* --color --format pretty
-autotest-all: features -r features -e data/* --color --format progress
+autotest: features -r features --color --format pretty
+autotest-all: features -r features --color --format progress
